@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+@import url("https://unpkg.com/open-props@1.6.17/easings.min.css");
 body, html {
   font-family: "Press Start 2P", cursive;
   -webkit-font-smoothing: none;
@@ -20,6 +21,40 @@ h1 {
   text-transform: uppercase;
   line-height: 1.4;
   text-shadow: 0 0.25em 0 rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+  font-size: 1.25rem;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 200;
+  text-transform: uppercase;
+  line-height: 1.4;
+  text-shadow: 0 0.25em 0 rgba(0, 0, 0, 0.5);
+}
+
+.text {
+  border-right: 4px solid black;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+button {
+  all: unset;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  perspective: 1000px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .container {
@@ -131,6 +166,26 @@ h1 {
   box-shadow: 0 0 0 0 #fde655;
 }
 
+.animation {
+  animation: typewriter 5s steps(19) 1s infinite both, blinkCursor 500ms steps(19) infinite;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 444px;
+  }
+}
+@keyframes blinkCursor {
+  from {
+    border-right-color: white;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
 @keyframes explode {
   0% {
     background-color: #e4f9fa;
