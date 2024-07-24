@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header class="cd-header">
+    <div class="header-wrapper">
+      <div class="nav-but-wrap">
+        <div class="menu-icon hover-target">
+          <span class="menu-icon__line menu-icon__line-left"></span>
+          <span class="menu-icon__line"></span>
+          <span class="menu-icon__line menu-icon__line-right"></span>
+        </div>          
+      </div>          
+    </div>        
+  </header>
+
+  <nav class="nav">
+    <div class="nav__content">
+      <ul class="nav__list">
+        <li class="nav__list-item"><a href="home.html" class="hover-target">Home</a></li>
+        <li class="nav__list-item active-nav"><a href="portfolio.html" class="hover-target">Portfolio</a></li>
+        <li class="nav__list-item"><a href="company.html" class="hover-target">Companies</a></li>
+        <li class="nav__list-item"><a href="#" class="hover-target">News</a></li>
+        <li class="nav__list-item"><a href="contacts.html" class="hover-target">Contact</a></li>
+      </ul>
+    </div>
+  </nav>    
+
+  <div class="section full-height over-hide">  
+    <div class="switch-wrap">
+      <h1>My Projects</h1>
+      <div class="projects">
+        <div class="project">
+          <a target="_blank" href="https://github.com/SolomonGM/crypto-comparator-api">
+            <img src="/assets/Crypto-CurrencyApilogo.png" alt="Crypto Comparator API Logo" class="project-logo">
+            <h3>crypto-comparator-api</h3>
+          </a>
+          <button class="toggle-description">Show More</button>
+          <p class="description">This FastAPI app fetches the latest cryptocurrency prices from CoinGecko, allowing real-time comparisons with any currency.</p>
+        </div>
+        <div class="project">
+          <a target="_blank" href="https://github.com/SolomonGM/TCPListners-testing">
+            <img src="/assets/TCPListnerlogo.png" alt="TCP Listener Testing Logo" class="project-logo">
+            <h3>TCPListner-testing</h3>
+          </a>
+          <button class="toggle-description">Show More</button>
+          <p class="description">This TCP listener testing program is a console application in C# designed to simulate and test client-server communications by listening for and handling TCP connections.</p>
+        </div>
+        <div class="project">
+          <a target="_blank" href="https://github.com/SolomonGM/file-transfer-tool">
+            <img src="/assets/FileTransferTool.png" alt="File Transfer Tool Logo" class="project-logo">
+            <h3>file-transfer-tool</h3>
+          </a>
+          <button class="toggle-description">Show More</button>
+          <p class="description">A simple yet powerful network file transfer tool for seamless sharing of files across devices.</p>
+        </div>
+        <div class="project">
+          <a target="_blank" href="https://github.com/SolomonGM/VentiMM">
+            <img src="/assets/VentiMMlogo.png" alt="VentiMM Logo" class="project-logo">
+            <h3>VentiMM</h3>
+          </a>
+          <button class="toggle-description">Show More</button>
+          <p class="description">VentiMM, built with Discord.NET, is a bot offering secure middleman services for cryptocurrency trades within Discord servers, ensuring trust and safety in transactions.</p>
+        </div>
+        <div class="project">
+          <a target="_blank" href="https://github.com/SolomonGM/MellowMC">
+            <img src="/assets/MellowMClogo.png" alt="MellowMC Logo" class="project-logo">
+            <h3>MellowMC</h3>
+          </a>
+          <button class="toggle-description">Show More</button>
+          <p class="description">Description</p>
+        </div>
+        <!-- Add more projects as needed -->
+      </div>
+      <div class="bubble-scroll">
+        <div class="arrow left-arrow"><i class="fas fa-chevron-left"></i></div>
+        <div class="bubble" data-index="0"></div>
+        <div class="bubble" data-index="1"></div>
+        <div class="bubble" data-index="2"></div>
+        <!-- Add more bubbles as needed -->
+        <div class="arrow right-arrow"><i class="fas fa-chevron-right"></i></div>
+      </div>
+    </div>
+  </div>  
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/js/page_animations.js"></script>
+  <script src="/js/expand_desc.js"></script>
+  <script src="/js/theme_toggle.js"></script>
+</body>
+</html>
